@@ -1,0 +1,15 @@
+$ORIGIN sergio.com.
+$TTL 84600
+@ 	IN SOA server.sergio.com. root@sergio.com. (
+				     123312 ; serial
+ 				     1h	    ; refresh
+ 				     2h     ; retry
+				     1w     ; expire
+ 				     1h )   ; min cache
+@	 IN 	NS server.sergio.com.
+
+; hosts en la zona
+
+server	 IN 	A 192.168.50.3
+www	 IN 	CNAME server
+parcial	IN	A 192.168.50.3
